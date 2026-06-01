@@ -58,3 +58,7 @@ GitHub Actions publish path:
    - add repository secret `PYPI_API_TOKEN`, or
    - configure PyPI Trusted Publisher for this GitHub repo
 3. Run the `Publish PyPI` workflow manually from the Actions tab
+
+Detailed publish notes:
+
+- see [PUBLISHING.md](./PUBLISHING.md)
