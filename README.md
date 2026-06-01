@@ -54,5 +54,7 @@ python3 -m venv .venv
 GitHub Actions publish path:
 
 1. Open the GitHub repo settings for `tensorium-labs/tensorium-sdk-py`
-2. Add repository secret `PYPI_API_TOKEN`
+2. Choose one publish mode:
+   - add repository secret `PYPI_API_TOKEN`, or
+   - configure PyPI Trusted Publisher for this GitHub repo
 3. Run the `Publish PyPI` workflow manually from the Actions tab
