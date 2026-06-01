@@ -39,6 +39,25 @@ python3 -m pip install -e '.[dev]'
 pytest
 ```
 
+## Example App
+
+A minimal CLI example is included at `examples/wallet_cli.py`.
+
+Show wallet summary from a private key:
+
+```bash
+export TXM_PRIVATE_KEY_HEX="YOUR_PRIVATE_KEY_HEX"
+export TXM_RPC_URL="https://rpc.tensoriumlabs.com"
+python3 examples/wallet_cli.py summary
+```
+
+Send a transaction:
+
+```bash
+export TXM_PRIVATE_KEY_HEX="YOUR_PRIVATE_KEY_HEX"
+python3 examples/wallet_cli.py send --to txm1qdestination... --atoms 100000000
+```
+
 ## Publish To PyPI
 
 Current published package:
