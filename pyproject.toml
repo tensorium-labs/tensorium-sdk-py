@@ -25,7 +25,7 @@ dev = [
 [project.urls]
 Homepage = "https://tensoriumlabs.com"
 Documentation = "https://docs.tensoriumlabs.com"
-Repository = "https://github.com/tensorium-labs/tensorium-sdk-py"
+Repository = "https://github.com/rygroup-dev/tensorium-sdk-py"
 
 [tool.setuptools.package-data]
 tensorium_sdk = ["py.typed"]
