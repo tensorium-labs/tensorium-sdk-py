@@ -41,6 +41,11 @@ pytest
 
 ## Publish To PyPI
 
+Current published package:
+
+- PyPI: https://pypi.org/project/tensorium-sdk/
+- Latest release: `0.1.0`
+
 Local publish path:
 
 ```bash
@@ -53,11 +58,9 @@ python3 -m venv .venv
 
 GitHub Actions publish path:
 
-1. Open the GitHub repo settings for `tensorium-labs/tensorium-sdk-py`
-2. Choose one publish mode:
-   - add repository secret `PYPI_API_TOKEN`, or
-   - configure PyPI Trusted Publisher for this GitHub repo
-3. Run the `Publish PyPI` workflow manually from the Actions tab
+1. Push the target release commit to `main`
+2. Run the `Publish PyPI` workflow manually from the Actions tab
+3. Verify the uploaded version on PyPI
 
 Detailed publish notes:
 
