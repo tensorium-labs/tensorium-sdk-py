@@ -20,7 +20,7 @@ def _wallet_from_env() -> TxmWallet:
 
 
 def _rpc_from_env() -> TxmRPC:
-    return TxmRPC(os.environ.get("TXM_RPC_URL", "https://rpc.tensoriumlabs.com"))
+    return TxmRPC(os.environ.get("TXM_RPC_URL", "https://mc-rpc.tensoriumlabs.com"))
 
 
 def cmd_summary() -> int:

@@ -13,7 +13,7 @@ pip install tensorium-sdk
 ```python
 from tensorium_sdk import TxmRPC, TxmWallet, send
 
-rpc = TxmRPC("https://rpc.tensoriumlabs.com")
+rpc = TxmRPC("https://mc-rpc.tensoriumlabs.com")
 wallet = TxmWallet.from_private_key_hex("YOUR_PRIVATE_KEY_HEX")
 
 utxos = rpc.get_utxos(wallet.address)["utxos"]
@@ -47,7 +47,7 @@ Show wallet summary from a private key:
 
 ```bash
 export TXM_PRIVATE_KEY_HEX="YOUR_PRIVATE_KEY_HEX"
-export TXM_RPC_URL="https://rpc.tensoriumlabs.com"
+export TXM_RPC_URL="https://mc-rpc.tensoriumlabs.com"
 python3 examples/wallet_cli.py summary
 ```
 
