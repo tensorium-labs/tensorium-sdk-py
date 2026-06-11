@@ -82,7 +82,7 @@ def test_rpc_methods_call_expected_paths():
     def request_fn(method, url, body):
         calls.append((method, url, body))
         if url.endswith("/getblockcount"):
-            return {"height": 100, "chain_id": "tensorium-mainnet-candidate-0"}
+            return {"height": 100, "chain_id": "tensorium-mainnet"}
         if url.endswith("/getutxos/txm1qtest"):
             return {"tip_height": 100, "utxo_count": 0, "utxos": []}
         if url.endswith("/sendrawtransaction"):
